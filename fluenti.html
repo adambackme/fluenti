@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0C0C0C">
+<title>Fluenti — American English Marrakech | Speak Real. Sound Native.</title>
+<meta name="description" content="Fluenti — Private American English lessons in Marrakech. Real slang, pronunciation & conversation with a CELTA & DELTA certified native-level tutor. Trial session 150 MAD.">
+<meta name="keywords" content="cours anglais américain Marrakech, American English Marrakech, private English tutor Marrakech, IELTS Marrakech, TOEFL Marrakech, Fluenti">
+<meta property="og:title" content="Fluenti — American English Marrakech">
+<meta property="og:description" content="Stop sounding like a textbook. Learn real American English with a certified native-level tutor. Trial 150 MAD.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://fluenti.ma">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+:root{--black:#0C0C0C;--offwhite:#F5F2EC;--white:#FFFFFF;--red:#B22234;--red2:#8B1A25;--navy:#2B2D6E;--gold:#D4A017;--gold2:#F0C040;--ink2:#3A3A3A;--ink3:#888888;--border:rgba(0,0,0,0.09);--bebe:'Bebas Neue',sans-serif;--dm:'DM Sans',sans-serif;--r4:4px;--r8:8px;--r12:12px;--r16:16px;--nav-h:60px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--dm);background:var(--offwhite);color:var(--black);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:var(--dm);cursor:pointer;border:none;background:none}
+.section-label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:500;margin-bottom:10px;display:block}
+.section-title{font-family:var(--bebe);font-size:clamp(34px,6vw,60px);letter-spacing:1px;line-height:.95;color:var(--black);margin-bottom:16px}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:200;background:rgba(245,242,236,0.97);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:var(--nav-h)}
+.nav-logo{font-family:var(--bebe);font-size:24px;letter-spacing:3px;color:var(--black)}
+.nav-logo span{color:var(--red)}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:13px;color:var(--ink2);transition:color .2s;padding:4px 0}
+.nav-links a:hover{color:var(--red)}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-btn{background:var(--black);color:var(--offwhite);font-size:13px;font-weight:500;padding:10px 20px;border-radius:var(--r4);transition:background .2s;white-space:nowrap}
+.nav-btn:hover{background:var(--red)}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:8px;width:40px;height:40px;justify-content:center;align-items:center;border-radius:var(--r4);border:1px solid var(--border)}
+.hamburger span{display:block;width:20px;height:2px;background:var(--black);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* MOBILE DRAWER */
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;z-index:190;background:var(--offwhite);padding:24px 5% 40px;flex-direction:column;overflow-y:auto;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.mobile-menu.open{transform:translateX(0)}
+.mm-link{display:flex;align-items:center;justify-content:space-between;font-size:22px;font-family:var(--bebe);letter-spacing:2px;color:var(--black);padding:18px 0;border-bottom:1px solid var(--border)}
+.mm-link .arr{font-family:var(--dm);font-size:16px;color:var(--ink3)}
+.mm-cta{margin-top:28px;background:var(--red);color:#fff;text-align:center;padding:18px;border-radius:var(--r8);font-size:18px;font-family:var(--bebe);letter-spacing:2px;display:block}
+.mm-wa{margin-top:10px;background:#25D366;color:#fff;text-align:center;padding:18px;border-radius:var(--r8);font-size:18px;font-family:var(--bebe);letter-spacing:2px;display:block}
+.mm-pay{margin-top:20px;display:flex;gap:8px;flex-wrap:wrap}
+.mm-pay span{background:var(--white);border:1px solid var(--border);border-radius:var(--r4);padding:5px 12px;font-size:12px;color:var(--ink2)}
+
+/* FLOATING WHATSAPP */
+.wa-float{position:fixed;bottom:28px;right:20px;z-index:180;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+/* STICKY BAR */
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:170;background:var(--black);padding:12px 5%;border-top:1px solid rgba(255,255,255,0.08);align-items:center;justify-content:space-between;gap:10px;padding-bottom:max(12px,env(safe-area-inset-bottom))}
+.sticky-bar-text{color:rgba(255,255,255,0.6);font-size:12px;line-height:1.4}
+.sticky-bar-text strong{color:#fff;display:block;font-size:14px;font-weight:500}
+.sticky-bar-btn{background:var(--red);color:#fff;font-size:14px;font-weight:500;padding:13px 22px;border-radius:var(--r4);white-space:nowrap;flex-shrink:0}
+
+/* HERO */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden}
+.hero-left{background:var(--black);padding:clamp(72px,10vw,120px) 6% 80px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero-left::after{content:'FLUENTI';position:absolute;bottom:-20px;left:-10px;font-family:var(--bebe);font-size:clamp(80px,18vw,200px);line-height:.85;color:rgba(255,255,255,0.025);letter-spacing:-4px;pointer-events:none;white-space:nowrap}
+.flag-bar{display:flex;gap:3px;margin-bottom:clamp(20px,4vw,36px)}
+.flag-bar div{height:4px;border-radius:2px}
+.fb1{flex:3;background:var(--red)}.fb2{flex:2;background:#fff}.fb3{flex:3;background:var(--navy)}
+.hero-eyebrow{font-size:11px;font-weight:500;color:var(--gold2);letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-family:var(--bebe);font-size:clamp(52px,8vw,100px);line-height:.92;letter-spacing:2px;color:#fff;margin-bottom:clamp(16px,3vw,28px)}
+.hero h1 .red{color:var(--red)}.hero h1 .gold{color:var(--gold2)}
+.hero-sub{font-size:clamp(14px,1.8vw,17px);color:rgba(255,255,255,0.55);line-height:1.75;max-width:420px;margin-bottom:clamp(24px,4vw,40px);font-weight:300}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-red{background:var(--red);color:#fff;font-size:15px;font-weight:500;padding:15px 28px;border-radius:var(--r4);transition:all .2s;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;min-height:50px}
+.btn-red:hover{background:var(--red2);transform:translateY(-1px)}
+.btn-red:active{transform:scale(.98)}
+.btn-outline-w{border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.8);font-size:15px;font-weight:300;padding:15px 24px;border-radius:var(--r4);transition:all .2s;display:inline-flex;align-items:center;min-height:50px;white-space:nowrap}
+.btn-outline-w:hover{border-color:rgba(255,255,255,.7);color:#fff}
+.hero-certs{margin-top:clamp(28px,5vw,52px);padding-top:24px;border-top:1px solid rgba(255,255,255,0.07);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.hero-certs .cl{font-size:11px;color:rgba(255,255,255,0.25);letter-spacing:.08em;margin-right:4px}
+.cert{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);padding:5px 10px;border-radius:3px;font-family:var(--bebe);font-size:13px;letter-spacing:1px;color:rgba(255,255,255,0.6)}
+.hero-right{background:var(--offwhite);display:flex;align-items:center;justify-content:center;padding:60px 5%;position:relative}
+.hero-right::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:repeating-linear-gradient(90deg,var(--red) 0 33%,#fff 33% 66%,var(--navy) 66% 100%)}
+.info-card{background:var(--black);border-radius:var(--r16);padding:clamp(24px,4vw,36px) clamp(20px,4vw,32px);color:#fff;width:100%;max-width:360px;position:relative}
+.avail-dot{position:absolute;top:18px;right:18px;display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,0.4)}
+.dot{width:7px;height:7px;border-radius:50%;background:#4ECAA5;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.ic-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:20px}
+.price-big{font-family:var(--bebe);font-size:68px;letter-spacing:-2px;color:var(--gold2);line-height:1}
+.price-unit{font-size:12px;color:rgba(255,255,255,0.4);margin-top:4px;margin-bottom:20px}
+.ic-divider{height:1px;background:rgba(255,255,255,0.07);margin:16px 0}
+.ic-rows{display:flex;flex-direction:column;gap:8px}
+.ic-row{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);border-radius:var(--r8);padding:11px 14px;display:flex;justify-content:space-between;align-items:center}
+.ir-name{font-size:13px;color:rgba(255,255,255,0.65)}
+.ir-val{font-size:13px;font-weight:500;color:var(--gold2);font-family:var(--bebe);letter-spacing:.5px}
+.payment-row{margin-top:18px;padding:12px;background:rgba(178,34,52,0.12);border:1px solid rgba(178,34,52,0.25);border-radius:var(--r8)}
+.pr-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:8px}
+.pay-methods{display:flex;gap:6px;flex-wrap:wrap}
+.pm{background:rgba(255,255,255,0.08);border-radius:3px;padding:3px 9px;font-size:11px;font-weight:500;color:rgba(255,255,255,0.7)}
+
+/* STRIP */
+.strip{background:var(--red);display:flex;align-items:center;justify-content:center;padding:16px 5%;gap:clamp(16px,4vw,40px);flex-wrap:wrap;overflow:hidden}
+.strip span{font-family:var(--bebe);font-size:15px;letter-spacing:3px;color:rgba(255,255,255,0.85);white-space:nowrap}
+.strip .dot2{width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,0.3);flex-shrink:0}
+
+/* TRUST BAR */
+.trust-bar{background:var(--white);border-bottom:1px solid var(--border);padding:18px 5%;display:flex;gap:clamp(16px,4vw,48px);align-items:center;justify-content:center;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px}
+.trust-icon{width:36px;height:36px;border-radius:50%;background:var(--offwhite);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.trust-text .tt{font-size:13px;font-weight:500;color:var(--black)}
+.trust-text .ts{font-size:11px;color:var(--ink3);margin-top:1px}
+
+/* VS */
+.vs-section{padding:clamp(56px,10vw,100px) 5%}
+.vs-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,2vw,20px);margin-top:clamp(28px,5vw,56px)}
+.vs-col{border-radius:var(--r12);padding:clamp(20px,4vw,32px)}
+.vs-old{background:var(--white);border:1px solid var(--border)}.vs-new{background:var(--black)}
+.vs-tag{font-family:var(--bebe);font-size:13px;letter-spacing:2px;margin-bottom:16px;display:block}
+.vs-old .vs-tag{color:var(--ink3)}.vs-new .vs-tag{color:var(--gold2)}
+.vs-item{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid}
+.vs-old .vs-item{border-color:var(--border)}.vs-new .vs-item{border-color:rgba(255,255,255,0.06)}
+.vs-item:last-child{border-bottom:none}
+.vs-icon{font-size:14px;margin-top:1px;flex-shrink:0;width:16px}
+.vs-text{font-size:13px;line-height:1.55}
+.vs-old .vs-text{color:var(--ink3);text-decoration:line-through}.vs-new .vs-text{color:rgba(255,255,255,0.75)}
+
+/* SERVICES */
+.services-section{padding:clamp(56px,10vw,100px) 5%;background:var(--black)}
+.services-section .section-label{color:var(--gold2)}.services-section .section-title{color:#fff}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:clamp(28px,5vw,48px)}
+.svc{padding:clamp(20px,3vw,32px) clamp(16px,2.5vw,26px);background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);transition:background .25s}
+.svc:hover{background:rgba(178,34,52,0.1);border-color:rgba(178,34,52,0.2)}
+.svc-icon{font-size:26px;margin-bottom:14px;display:block}
+.svc-title{font-family:var(--bebe);font-size:20px;letter-spacing:1px;color:#fff;margin-bottom:8px}
+.svc-desc{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.65;margin-bottom:14px}
+.svc-price{font-family:var(--bebe);font-size:18px;color:var(--gold2);letter-spacing:.5px}
+.svc-price span{font-family:var(--dm);font-size:11px;color:rgba(255,255,255,0.25);font-weight:300}
+.svc-book{margin-top:12px;display:inline-block;font-size:12px;color:rgba(255,255,255,0.35);border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:2px;transition:color .2s,border-color .2s}
+.svc:hover .svc-book{color:var(--gold2);border-color:var(--gold2)}
+
+/* BEFORE AFTER */
+.sounds-section{padding:clamp(56px,10vw,100px) 5%}
+.sounds-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(10px,2vw,16px);margin-top:clamp(28px,5vw,48px)}
+.sound-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r12);padding:clamp(16px,3vw,24px)}
+.sc-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;margin-bottom:10px;display:block}
+.sc-label.bad{color:var(--ink3)}.sc-label.good{color:var(--red)}
+.sc-text{font-size:clamp(13px,1.5vw,14px);line-height:1.7;color:var(--black)}
+.sc-tag{display:inline-block;font-size:11px;padding:3px 9px;border-radius:3px;margin-top:10px;font-weight:500}
+.sc-tag.bad{background:#FEE2E2;color:#A32D2D}.sc-tag.good{background:#DCFCE7;color:#166534}
+
+/* LEVELS */
+.levels-section{padding:clamp(56px,10vw,100px) 5%;border-top:1px solid var(--border)}
+.levels-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(8px,1.5vw,12px);margin-top:clamp(28px,5vw,48px)}
+.level-card{border-radius:var(--r8);padding:clamp(16px,2.5vw,22px) clamp(14px,2vw,20px);border:1px solid var(--border);background:var(--white);transition:transform .2s,border-color .2s}
+.level-card:hover{transform:translateY(-2px);border-color:rgba(178,34,52,0.3)}
+.lv-tag{display:inline-block;font-family:var(--bebe);font-size:12px;letter-spacing:2px;padding:3px 10px;border-radius:3px;margin-bottom:8px}
+.lv-a{background:#DCFCE7;color:#166534}.lv-b{background:#DBEAFE;color:#1D4ED8}.lv-c{background:#FEF9C3;color:#854D0E}.lv-e{background:#FEE2E2;color:#A32D2D}
+.lv-name{font-family:var(--bebe);font-size:16px;color:var(--black);letter-spacing:.5px;margin-bottom:6px}
+.lv-desc{font-size:12px;color:var(--ink3);line-height:1.6}
+
+/* PRICING */
+.pricing-section{padding:clamp(56px,10vw,100px) 5%;background:var(--white)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,20px);margin-top:clamp(28px,5vw,48px)}
+.p-card{border-radius:var(--r16);padding:clamp(22px,3.5vw,32px) clamp(18px,3vw,28px);border:1.5px solid var(--border);position:relative;transition:all .25s}
+.p-card:hover{border-color:rgba(178,34,52,0.3)}
+.p-card.featured{background:var(--black);border-color:transparent}
+.pop-label{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:20px;white-space:nowrap}
+.p-name{font-family:var(--bebe);font-size:17px;letter-spacing:1px;color:var(--black);margin-bottom:6px}
+.p-card.featured .p-name{color:#fff}
+.p-amt{font-family:var(--bebe);font-size:clamp(34px,5vw,48px);letter-spacing:-1px;color:var(--black);line-height:1}
+.p-card.featured .p-amt{color:var(--gold2)}
+.p-cur{font-size:14px;font-weight:300;color:var(--ink3);vertical-align:super}
+.p-card.featured .p-cur{color:rgba(255,255,255,0.3)}
+.p-period{font-size:12px;color:var(--ink3);margin-bottom:20px;margin-top:2px}
+.p-card.featured .p-period{color:rgba(255,255,255,0.35)}
+.p-features{list-style:none;margin-bottom:22px}
+.p-features li{font-size:13px;padding:9px 0;border-bottom:1px solid var(--border);color:var(--ink2);display:flex;align-items:center;gap:10px}
+.p-card.featured .p-features li{color:rgba(255,255,255,0.6);border-color:rgba(255,255,255,0.07)}
+.p-features li::before{content:'✓';color:#166534;font-size:11px;font-weight:600;flex-shrink:0}
+.p-card.featured .p-features li::before{color:var(--gold2)}
+.p-btn{display:flex;align-items:center;justify-content:center;padding:14px;border-radius:var(--r8);font-size:14px;font-weight:500;transition:all .2s;border:1.5px solid var(--border);color:var(--black);min-height:50px}
+.p-btn:hover{background:var(--offwhite)}.p-btn:active{transform:scale(.98)}
+.p-card.featured .p-btn{background:var(--red);border-color:var(--red);color:#fff}
+.p-card.featured .p-btn:hover{background:var(--red2)}
+
+/* PAYMENT */
+.payment-section{padding:clamp(56px,8vw,80px) 5%;background:var(--black)}
+.payment-section .section-label{color:var(--gold2)}.payment-section .section-title{color:#fff}
+.pay-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.5vw,16px);margin-top:clamp(24px,4vw,40px)}
+.pay-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r12);padding:clamp(16px,2.5vw,24px) clamp(12px,2vw,20px);text-align:center;transition:background .2s}
+.pay-card:hover{background:rgba(255,255,255,0.07)}
+.pay-name{font-family:var(--bebe);font-size:clamp(18px,2.5vw,22px);letter-spacing:1px;color:var(--gold2);margin-bottom:6px}
+.pay-type{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:.06em}
+.pay-note{font-size:12px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.5}
+.pay-also{margin-top:24px;text-align:center;font-size:13px;color:rgba(255,255,255,0.35)}
+.pay-also span{color:rgba(255,255,255,0.65)}
+
+/* TESTIMONIALS */
+.testi-section{padding:clamp(56px,10vw,100px) 5%;background:var(--offwhite)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,2vw,16px);margin-top:clamp(28px,5vw,48px)}
+.t-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r16);padding:clamp(18px,3vw,28px)}
+.t-stars{display:flex;gap:3px;margin-bottom:14px}
+.star{width:13px;height:13px;background:var(--gold);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);flex-shrink:0}
+.t-text{font-size:clamp(13px,1.5vw,14px);color:var(--ink2);line-height:1.72;margin-bottom:18px;font-style:italic}
+.t-author{display:flex;align-items:center;gap:12px}
+.t-av{width:38px;height:38px;border-radius:50%;background:#F5E8E8;display:flex;align-items:center;justify-content:center;font-family:var(--bebe);font-size:14px;letter-spacing:1px;color:var(--red);flex-shrink:0}
+.t-name{font-size:13px;font-weight:500;color:var(--black)}.t-role{font-size:11px;color:var(--ink3);margin-top:2px}
+
+/* FAQ */
+.faq-section{padding:clamp(56px,10vw,100px) 5%;background:var(--white)}
+.faq-list{margin-top:clamp(24px,5vw,48px);max-width:700px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:clamp(14px,1.8vw,15px);font-weight:500;color:var(--black);list-style:none;gap:16px;-webkit-tap-highlight-color:transparent}
+.faq-q::-webkit-details-marker{display:none}
+details[open] .faq-q{color:var(--red)}
+.faq-arrow{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--offwhite);display:flex;align-items:center;justify-content:center;font-size:16px;transition:transform .25s;line-height:1}
+details[open] .faq-arrow{transform:rotate(45deg);background:var(--red);color:#fff}
+.faq-a{font-size:14px;color:var(--ink2);line-height:1.75;padding:0 0 20px}
+
+/* CONTACT */
+.contact-section{padding:clamp(56px,10vw,100px) 5%;background:var(--offwhite);border-top:1px solid var(--border)}
+.contact-section .section-title{color:var(--black);margin-bottom:8px}
+.contact-sub{font-size:16px;color:var(--ink3);margin-bottom:clamp(28px,5vw,48px);font-weight:300}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2.5vw,24px)}
+.contact-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r16);padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;gap:16px}
+.contact-card.primary{background:var(--black);border-color:transparent}
+.cc-icon{font-size:32px}
+.cc-title{font-family:var(--bebe);font-size:22px;letter-spacing:1px;color:var(--black)}
+.contact-card.primary .cc-title{color:#fff}
+.cc-desc{font-size:13px;color:var(--ink3);line-height:1.65}
+.contact-card.primary .cc-desc{color:rgba(255,255,255,0.5)}
+.cc-btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:16px 24px;border-radius:var(--r8);font-size:15px;font-weight:500;transition:all .2s;min-height:54px}
+.cc-btn.red{background:var(--red);color:#fff}.cc-btn.red:hover{background:var(--red2)}
+.cc-btn.wa{background:#25D366;color:#fff}.cc-btn.wa:hover{background:#1ebe5d}
+.cc-btn:active{transform:scale(.98)}
+.cc-note{font-size:11px;color:rgba(255,255,255,0.3);text-align:center}
+
+/* CTA */
+.cta-section{padding:clamp(72px,12vw,120px) 5%;background:var(--red);text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'FLUENTI';position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);font-family:var(--bebe);font-size:clamp(80px,18vw,160px);letter-spacing:-4px;color:rgba(0,0,0,0.1);white-space:nowrap;pointer-events:none}
+.cta-section h2{font-family:var(--bebe);font-size:clamp(36px,6vw,80px);color:#fff;letter-spacing:2px;line-height:.95;margin-bottom:16px;position:relative;z-index:1}
+.cta-section p{font-size:clamp(15px,2vw,17px);color:rgba(255,255,255,0.72);margin-bottom:clamp(28px,5vw,40px);font-weight:300;position:relative;z-index:1}
+.cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+.btn-white-solid{background:#fff;color:var(--red);font-size:15px;font-weight:500;padding:15px 32px;border-radius:var(--r4);transition:all .2s;display:inline-flex;align-items:center;gap:8px;min-height:52px}
+.btn-white-solid:hover{transform:translateY(-2px)}.btn-white-solid:active{transform:scale(.98)}
+.btn-outline-white2{border:1.5px solid rgba(255,255,255,0.4);color:rgba(255,255,255,0.9);font-size:15px;font-weight:300;padding:15px 32px;border-radius:var(--r4);transition:all .2s;display:inline-flex;align-items:center;gap:8px;min-height:52px}
+.btn-outline-white2:hover{border-color:rgba(255,255,255,.9)}
+
+/* FOOTER */
+footer{background:var(--black);padding:clamp(40px,8vw,64px) 5% clamp(20px,4vw,28px)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,5vw,48px);margin-bottom:clamp(28px,5vw,48px)}
+.f-brand-name{font-family:var(--bebe);font-size:26px;letter-spacing:3px;color:#fff;margin-bottom:10px}
+.f-brand-name span{color:var(--red)}
+.f-brand-sub{font-size:13px;color:rgba(255,255,255,0.35);line-height:1.7;max-width:220px}
+.f-col h4{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:14px}
+.f-col a,.f-col p{display:block;font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:8px;transition:color .2s}
+.f-col a:hover{color:rgba(255,255,255,.9)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,0.2)}
+.f-cert-row{display:flex;gap:6px;flex-wrap:wrap}
+.f-cert{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:2px;padding:3px 7px;font-family:var(--bebe);font-size:11px;letter-spacing:1px;color:rgba(255,255,255,0.3)}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero h1{animation:fadeUp .65s .05s both}
+.hero-sub{animation:fadeUp .65s .2s both}
+.hero-actions{animation:fadeUp .65s .35s both}
+.hero-certs{animation:fadeUp .65s .5s both}
+
+/* ── MOBILE 768px ── */
+@media(max-width:768px){
+  :root{--nav-h:56px}
+  .nav-links,.nav-btn{display:none}
+  .hamburger{display:flex}
+  .mobile-menu{display:flex}
+  .sticky-bar{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-right{display:none}
+  .hero-left{padding:52px 5% 56px}
+  .hero h1{font-size:clamp(46px,13vw,68px)}
+  .hero-sub{font-size:15px;max-width:100%}
+  .btn-red,.btn-outline-w{font-size:15px;padding:16px 22px;width:100%;justify-content:center}
+  .hero-actions{flex-direction:column}
+  .strip{gap:12px;padding:14px 5%}
+  .strip span{font-size:12px;letter-spacing:2px}
+  .trust-bar{gap:14px;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .trust-bar::-webkit-scrollbar{display:none}
+  .trust-item{flex-shrink:0}
+  .vs-grid,.sounds-grid,.contact-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .levels-grid{grid-template-columns:1fr 1fr}
+  .pricing-grid{grid-template-columns:1fr}
+  .p-card.featured{order:-1}
+  .pay-grid{grid-template-columns:1fr 1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .cta-btns{flex-direction:column;align-items:stretch}
+  .btn-white-solid,.btn-outline-white2{width:100%;justify-content:center}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .wa-float{bottom:82px}
+  .section-title{font-size:clamp(30px,9vw,46px)}
+}
+@media(max-width:380px){
+  .levels-grid,.pay-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .hero h1{font-size:42px}
+}
+</style>
+</head>
+<body>
+
+<nav id="top">
+  <a href="#top" class="nav-logo">FLUEN<span>TI</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Lessons</a></li>
+    <li><a href="#levels">Levels</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#payment">Payment</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#contact" class="nav-btn">Book trial →</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="#services" class="mm-link" onclick="closeMenu()">Lessons <span class="arr">→</span></a>
+  <a href="#levels" class="mm-link" onclick="closeMenu()">All levels <span class="arr">→</span></a>
+  <a href="#pricing" class="mm-link" onclick="closeMenu()">Pricing <span class="arr">→</span></a>
+  <a href="#payment" class="mm-link" onclick="closeMenu()">How to pay <span class="arr">→</span></a>
+  <a href="#faq" class="mm-link" onclick="closeMenu()">FAQ <span class="arr">→</span></a>
+  <a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20a%20trial%20session%20with%20Fluenti." class="mm-wa" onclick="closeMenu()">💬 WHATSAPP TO BOOK</a>
+  <a href="mailto:your@email.com" class="mm-cta" onclick="closeMenu()">✉ EMAIL TO BOOK</a>
+  <div class="mm-pay">
+    <span>Cash</span><span>CIH</span><span>Attijari</span><span>CashPlus</span><span>Wafacash</span>
+  </div>
+</div>
+
+<a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20a%20trial%20session%20with%20Fluenti." class="wa-float" aria-label="Book on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<div class="sticky-bar" id="sticky-bar">
+  <div class="sticky-bar-text">
+    <strong>Book a trial — 150 MAD</strong>
+    1 hour · Marrakech or online
+  </div>
+  <a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20a%20trial%20session%20with%20Fluenti." class="sticky-bar-btn">WhatsApp →</a>
+</div>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="flag-bar"><div class="fb1"></div><div class="fb2"></div><div class="fb3"></div></div>
+    <div class="hero-eyebrow">Fluenti · Private lessons · Marrakech</div>
+    <h1>STOP<br>SOUNDING<br>LIKE A<br><span class="red">TEXT</span><span class="gold">BOOK.</span></h1>
+    <p class="hero-sub">Learn the English Americans actually speak — slang, pronunciation, real conversation, and the culture behind it. Private 1-on-1 lessons in Marrakech.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20a%20trial%20session%20with%20Fluenti." class="btn-red">💬 Book trial · 150 MAD</a>
+      <a href="#services" class="btn-outline-w">See all lessons ↓</a>
+    </div>
+    <div class="hero-certs">
+      <span class="cl">Certified</span>
+      <span class="cert">CELTA</span><span class="cert">DELTA</span><span class="cert">TEFL</span><span class="cert">TESOL</span><span class="cert">TOEFL</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="info-card">
+      <div class="avail-dot"><div class="dot"></div> Available now</div>
+      <div class="ic-label">Current rates — Marrakech</div>
+      <div class="price-big">150</div>
+      <div class="price-unit">MAD — trial session (1 hour)</div>
+      <div class="ic-divider"></div>
+      <div class="ic-rows">
+        <div class="ic-row"><span class="ir-name">General English</span><span class="ir-val">200–300/hr</span></div>
+        <div class="ic-row"><span class="ir-name">IELTS / TOEFL prep</span><span class="ir-val">350–400/hr</span></div>
+        <div class="ic-row"><span class="ir-name">Business English</span><span class="ir-val">400–500/hr</span></div>
+        <div class="ic-row"><span class="ir-name">10-session pack</span><span class="ir-val">2,200 MAD</span></div>
+      </div>
+      <div class="payment-row">
+        <div class="pr-label">Payment accepted</div>
+        <div class="pay-methods">
+          <span class="pm">Cash</span><span class="pm">CIH</span><span class="pm">Attijari</span><span class="pm">CashPlus</span><span class="pm">Wafacash</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <span>FLUENTI · MARRAKECH</span><div class="dot2"></div>
+  <span>AMERICAN SLANG</span><div class="dot2"></div>
+  <span>REAL PRONUNCIATION</span><div class="dot2"></div>
+  <span>NATIVE-LEVEL TUTOR</span><div class="dot2"></div>
+  <span>ALL LEVELS</span><div class="dot2"></div>
+  <span>MARRAKECH + ONLINE</span>
+</div>
+
+<div class="trust-bar">
+  <div class="trust-item"><div class="trust-icon">🎓</div><div class="trust-text"><div class="tt">CELTA &amp; DELTA</div><div class="ts">Cambridge certified</div></div></div>
+  <div class="trust-item"><div class="trust-icon">🇺🇸</div><div class="trust-text"><div class="tt">Native-level American</div><div class="ts">Raised in the US</div></div></div>
+  <div class="trust-item"><div class="trust-icon">📍</div><div class="trust-text"><div class="tt">Based in Marrakech</div><div class="ts">In-person + online</div></div></div>
+  <div class="trust-item"><div class="trust-icon">⭐</div><div class="trust-text"><div class="tt">5-star results</div><div class="ts">Real student reviews</div></div></div>
+  <div class="trust-item"><div class="trust-icon">💳</div><div class="trust-text"><div class="tt">Easy payment</div><div class="ts">Cash · CIH · Attijari</div></div></div>
+</div>
+
+<section class="vs-section" id="method">
+  <span class="section-label">The difference</span>
+  <h2 class="section-title">TEXTBOOK ENGLISH<br>VS REAL AMERICAN</h2>
+  <div class="vs-grid">
+    <div class="vs-col vs-old">
+      <span class="vs-tag">❌ What you learned in school</span>
+      <div class="vs-item"><span class="vs-icon">✗</span><span class="vs-text">"How do you do? I am very well, thank you."</span></div>
+      <div class="vs-item"><span class="vs-icon">✗</span><span class="vs-text">"I am going to the market." — robotic, no contractions</span></div>
+      <div class="vs-item"><span class="vs-icon">✗</span><span class="vs-text">"Would you be so kind as to pass the salt?"</span></div>
+      <div class="vs-item"><span class="vs-icon">✗</span><span class="vs-text">Memorizing rules but freezing in real conversations</span></div>
+      <div class="vs-item"><span class="vs-icon">✗</span><span class="vs-text">Can't understand movies or podcasts without subtitles</span></div>
+    </div>
+    <div class="vs-col vs-new">
+      <span class="vs-tag">✅ What Fluenti teaches you</span>
+      <div class="vs-item"><span class="vs-icon" style="color:#4ECAA5">✓</span><span class="vs-text">"Hey! What's up? I'm doing great, thanks!"</span></div>
+      <div class="vs-item"><span class="vs-icon" style="color:#4ECAA5">✓</span><span class="vs-text">"I'm gonna head to the market real quick." — natural speech</span></div>
+      <div class="vs-item"><span class="vs-icon" style="color:#4ECAA5">✓</span><span class="vs-text">"Hey, could you pass the salt? Thanks!"</span></div>
+      <div class="vs-item"><span class="vs-icon" style="color:#4ECAA5">✓</span><span class="vs-text">Fluency through real conversation — not grammar drills</span></div>
+      <div class="vs-item"><span class="vs-icon" style="color:#4ECAA5">✓</span><span class="vs-text">Train your ear with authentic American audio every session</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services-section" id="services">
+  <span class="section-label">What I teach</span>
+  <h2 class="section-title">EVERY LESSON<br>YOU NEED</h2>
+  <div class="services-grid">
+    <div class="svc"><span class="svc-icon">🇺🇸</span><div class="svc-title">AMERICAN ENGLISH</div><div class="svc-desc">Slang, idioms, real conversation, connected speech, and cultural context. The English they actually speak in the US.</div><div class="svc-price">200–300 MAD <span>/ hr</span></div><a href="#contact" class="svc-book">Book this →</a></div>
+    <div class="svc"><span class="svc-icon">🎤</span><div class="svc-title">PRONUNCIATION</div><div class="svc-desc">American R, flap T, connected speech — gonna/wanna/gotta, intonation and stress. Sound natural, not robotic.</div><div class="svc-price">200–280 MAD <span>/ hr</span></div><a href="#contact" class="svc-book">Book this →</a></div>
+    <div class="svc"><span class="svc-icon">💼</span><div class="svc-title">BUSINESS ENGLISH</div><div class="svc-desc">Meetings, presentations, email writing, negotiation, American corporate communication.</div><div class="svc-price">400–500 MAD <span>/ hr</span></div><a href="#contact" class="svc-book">Book this →</a></div>
+    <div class="svc"><span class="svc-icon">📝</span><div class="svc-title">IELTS &amp; TOEFL</div><div class="svc-desc">Score-targeted exam prep. All 4 skills. Mock tests with real band descriptor feedback every session.</div><div class="svc-price">350–400 MAD <span>/ hr</span></div><a href="#contact" class="svc-book">Book this →</a></div>
+    <div class="svc"><span class="svc-icon">💬</span><div class="svc-title">CONVERSATION</div><div class="svc-desc">Build fluency through structured American-style conversation. Lose the hesitation for good.</div><div class="svc-price">200–250 MAD <span>/ hr</span></div><a href="#contact" class="svc-book">Book this →</a></div>
+    <div class="svc"><span class="svc-icon">🌐</span><div class="svc-title">ONLINE SESSIONS</div><div class="svc-desc">Same quality via Google Meet or Zoom. Available anywhere in Morocco or internationally.</div><div class="svc-price">200–450 MAD <span>/ hr</span></div><a href="#contact" class="svc-book">Book this →</a></div>
+  </div>
+</section>
+
+<section class="sounds-section">
+  <span class="section-label">Real examples</span>
+  <h2 class="section-title">BEFORE &amp; AFTER<br>ONE MONTH</h2>
+  <div class="sounds-grid">
+    <div class="sound-card"><span class="sc-label bad">Before — textbook English</span><p class="sc-text">"Hello. I would like to know if it is possible to schedule a meeting for next week. Please let me know your availability."</p><span class="sc-tag bad">Technically correct. Sounds like a robot.</span></div>
+    <div class="sound-card"><span class="sc-label good">After — real American English</span><p class="sc-text">"Hey! Just wanted to check — are you free sometime next week to grab a quick call? Totally flexible on timing."</p><span class="sc-tag good">Correct AND natural. Sounds like a person.</span></div>
+    <div class="sound-card"><span class="sc-label bad">Before — greeting someone</span><p class="sc-text">"Good morning. How do you do? I hope you are having a fine day."</p><span class="sc-tag bad">Nobody in America talks like this.</span></div>
+    <div class="sound-card"><span class="sc-label good">After — same situation</span><p class="sc-text">"Hey! What's up? So good to finally meet you — I've heard a lot of great things!"</p><span class="sc-tag good">Warm, natural, American. Instantly relatable.</span></div>
+  </div>
+</section>
+
+<section class="levels-section" id="levels">
+  <span class="section-label">Who I teach</span>
+  <h2 class="section-title">ALL LEVELS.<br>ALL GOALS.</h2>
+  <div class="levels-grid">
+    <div class="level-card"><span class="lv-tag lv-a">A1</span><div class="lv-name">ABSOLUTE BEGINNER</div><div class="lv-desc">Zero English. Real American greetings and survival phrases — not grammar rules.</div></div>
+    <div class="level-card"><span class="lv-tag lv-a">A2</span><div class="lv-name">ELEMENTARY</div><div class="lv-desc">Basic communication. Build vocabulary and daily conversation the American way.</div></div>
+    <div class="level-card"><span class="lv-tag lv-b">B1</span><div class="lv-name">INTERMEDIATE</div><div class="lv-desc">Can communicate but sounds stiff. Replace textbook phrases with real American expressions.</div></div>
+    <div class="level-card"><span class="lv-tag lv-b">B2</span><div class="lv-name">UPPER-INTERMEDIATE</div><div class="lv-desc">Nearly fluent but still sound foreign. Nail slang, pronunciation and cultural nuance.</div></div>
+    <div class="level-card"><span class="lv-tag lv-c">C1</span><div class="lv-name">ADVANCED</div><div class="lv-desc">Advanced but wants to sound truly native. Refine idiom, style, and American register.</div></div>
+    <div class="level-card"><span class="lv-tag lv-e">EXAM</span><div class="lv-name">IELTS / TOEFL</div><div class="lv-desc">Targeting a specific score. Structured prep with mock tests every session.</div></div>
+  </div>
+</section>
+
+<section class="pricing-section" id="pricing">
+  <span class="section-label">Rates</span>
+  <h2 class="section-title">CLEAR PRICING.<br>NO SURPRISES.</h2>
+  <div class="pricing-grid">
+    <div class="p-card">
+      <div class="p-name">STANDARD</div>
+      <div class="p-amt"><span class="p-cur">MAD </span>200–300</div>
+      <div class="p-period">per 60-minute session</div>
+      <ul class="p-features">
+        <li>American English A1–C1</li>
+        <li>Conversational fluency</li>
+        <li>Pronunciation coaching</li>
+        <li>In-person or online</li>
+        <li>Shared notes every session</li>
+      </ul>
+      <a href="#contact" class="p-btn">Book a session</a>
+    </div>
+    <div class="p-card featured">
+      <div class="pop-label">Most popular</div>
+      <div class="p-name">10-SESSION PACK</div>
+      <div class="p-amt"><span class="p-cur">MAD </span>2,200</div>
+      <div class="p-period">10 sessions · save 10%</div>
+      <ul class="p-features">
+        <li>All session types included</li>
+        <li>Custom learning plan</li>
+        <li>Progress review at session 5</li>
+        <li>WhatsApp support between sessions</li>
+        <li>Priority scheduling</li>
+      </ul>
+      <a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20the%2010-session%20Fluenti%20package." class="p-btn">Get the package →</a>
+    </div>
+    <div class="p-card">
+      <div class="p-name">EXAM &amp; BUSINESS</div>
+      <div class="p-amt"><span class="p-cur">MAD </span>350–500</div>
+      <div class="p-period">per 60-minute session</div>
+      <ul class="p-features">
+        <li>IELTS · TOEFL preparation</li>
+        <li>Business &amp; corporate English</li>
+        <li>Mock tests + band feedback</li>
+        <li>Score-targeting strategies</li>
+        <li>Trial session: 150–200 MAD</li>
+      </ul>
+      <a href="#contact" class="p-btn">Book exam prep</a>
+    </div>
+  </div>
+</section>
+
+<section class="payment-section" id="payment">
+  <span class="section-label">Payment methods</span>
+  <h2 class="section-title">PAY HOW<br>YOU WANT.</h2>
+  <div class="pay-grid">
+    <div class="pay-card"><div class="pay-name">CASH</div><div class="pay-type">In-person payment</div><div class="pay-note">Pay at the session. Always accepted. Zero fees.</div></div>
+    <div class="pay-card"><div class="pay-name">CIH</div><div class="pay-type">Bank transfer / deposit</div><div class="pay-note">CIH Bank transfer or branch deposit. Details on booking.</div></div>
+    <div class="pay-card"><div class="pay-name">ATTIJARI</div><div class="pay-type">Attijariwafa Bank</div><div class="pay-note">Bank transfer to Attijari account. Fast and easy.</div></div>
+    <div class="pay-card"><div class="pay-name">CASHPLUS</div><div class="pay-type">Mobile / cash transfer</div><div class="pay-note">Via CashPlus agent or app. No bank account needed.</div></div>
+  </div>
+  <p class="pay-also">Also accepted: <span>Wafacash · Barid Bank</span> — contact me to confirm your preferred method.</p>
+</section>
+
+<section class="testi-section">
+  <span class="section-label">Results</span>
+  <h2 class="section-title">WHAT STUDENTS SAY</h2>
+  <div class="testi-grid">
+    <div class="t-card"><div class="t-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="t-text">"After 3 sessions I finally understood why Americans say 'yeah, no' to disagree. Nobody ever explained this to me. My confidence in conversations went up completely."</p><div class="t-author"><div class="t-av">KA</div><div><div class="t-name">Karim A.</div><div class="t-role">Finance professional, Marrakech</div></div></div></div>
+    <div class="t-card"><div class="t-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="t-text">"8 years of English in school and I still couldn't understand American series. After 6 weeks with Fluenti I watch Netflix without subtitles. Completely different kind of teaching."</p><div class="t-author"><div class="t-av">NB</div><div><div class="t-name">Nadia B.</div><div class="t-role">University student, Marrakech</div></div></div></div>
+    <div class="t-card"><div class="t-stars"><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div><p class="t-text">"The IELTS prep was targeted and honest. I went from a 5.5 to a 7.0 in 7 weeks. The tutor knew exactly what the examiners were looking for in every section."</p><div class="t-author"><div class="t-av">YM</div><div><div class="t-name">Youssef M.</div><div class="t-role">IELTS student → UK university</div></div></div></div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <span class="section-label">Questions</span>
+  <h2 class="section-title">EVERYTHING<br>YOU WANT TO KNOW</h2>
+  <div class="faq-list">
+    <details class="faq-item"><summary class="faq-q">Do I need to speak any English to start? <span class="faq-arrow">+</span></summary><p class="faq-a">No. Complete beginners are very welcome. The first session is a needs analysis — we assess where you are and build everything from there. If you're at zero, we start at zero.</p></details>
+    <details class="faq-item"><summary class="faq-q">What's the difference between American English and regular English? <span class="faq-arrow">+</span></summary><p class="faq-a">Most teaching in Morocco follows a British or neutral academic model. American English has different vocabulary (apartment not flat, trash not rubbish), very different pronunciation — the American R, the flap T, connected speech like "gonna" and "wanna" — and a more direct, informal, expressive cultural style. If you want to understand American movies, podcasts, or talk to Americans naturally, you need to learn their version.</p></details>
+    <details class="faq-item"><summary class="faq-q">Where do sessions take place? <span class="faq-arrow">+</span></summary><p class="faq-a">In-person sessions are in Marrakech — exact location confirmed on booking. Online sessions are via Google Meet or Zoom, available to anyone in Morocco or internationally.</p></details>
+    <details class="faq-item"><summary class="faq-q">How do I pay? <span class="faq-arrow">+</span></summary><p class="faq-a">Cash at the session, or bank transfer/deposit via CIH, Attijariwafa, CashPlus, or Wafacash. Payment details are shared when you book. For packages, payment can be split across the first two sessions.</p></details>
+    <details class="faq-item"><summary class="faq-q">How quickly will I see results? <span class="faq-arrow">+</span></summary><p class="faq-a">Most students notice a real difference within 3–5 sessions. 1-on-1 lessons are dramatically more efficient than group classes — every minute is spent on exactly what you need. For exam prep, students doing 2 sessions per week typically see score improvement within 4–6 weeks.</p></details>
+    <details class="faq-item"><summary class="faq-q">Can I cancel or reschedule? <span class="faq-arrow">+</span></summary><p class="faq-a">Yes — with 24 hours notice, rescheduling is always free. Cancellations under 24 hours may be charged at 50% of the session rate. Life happens — just communicate early and we'll make it work.</p></details>
+    <details class="faq-item"><summary class="faq-q">What are your qualifications? <span class="faq-arrow">+</span></summary><p class="faq-a">CELTA (Cambridge Certificate), DELTA (Cambridge Diploma), TEFL, TESOL, and TOEFL certified. Native-level American English speaker, Moroccan-born, raised in the US, currently based in Marrakech. Experience teaching all levels from absolute beginners to exam and corporate preparation.</p></details>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <span class="section-label">Book now</span>
+  <h2 class="section-title">READY TO START?</h2>
+  <p class="contact-sub">Trial session · 150 MAD · 1 hour · Marrakech or online</p>
+  <div class="contact-grid">
+    <div class="contact-card primary">
+      <div class="cc-icon">💬</div>
+      <div class="cc-title">WHATSAPP — FASTEST</div>
+      <div class="cc-desc">Send a message and I'll reply within a few hours to confirm your session, location, and payment method.</div>
+      <a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20a%20trial%20session%20with%20Fluenti." class="cc-btn wa">WhatsApp to book →</a>
+      <div class="cc-note">Message pre-filled — just tap send</div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon">✉️</div>
+      <div class="cc-title">EMAIL</div>
+      <div class="cc-desc">Prefer email? Send me your availability, your level, and what you're looking to improve.</div>
+      <a href="mailto:your@email.com?subject=Fluenti%20-%20Trial%20Session%20Booking" class="cc-btn red">Email to book →</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>READY TO SPEAK<br>LIKE A NATIVE?</h2>
+  <p>Book your first session for 150 MAD and see the difference one lesson makes.</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/212XXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20a%20trial%20session%20with%20Fluenti." class="btn-white-solid">💬 WhatsApp to book →</a>
+    <a href="mailto:your@email.com" class="btn-outline-white2">✉ Email me instead</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="f-brand-name">FLUEN<span>TI</span></div>
+      <p class="f-brand-sub">Fluenti is Marrakech's American English school. Native-level, certified, and built different.</p>
+    </div>
+    <div class="f-col">
+      <h4>Lessons</h4>
+      <a href="#services">American English</a>
+      <a href="#services">Pronunciation</a>
+      <a href="#services">IELTS &amp; TOEFL</a>
+      <a href="#services">Business English</a>
+      <a href="#services">Online sessions</a>
+    </div>
+    <div class="f-col">
+      <h4>Info</h4>
+      <a href="#levels">All levels A1–C1</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#payment">Payment methods</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="f-col">
+      <h4>Contact</h4>
+      <p>📍 Marrakech, Morocco</p>
+      <a href="mailto:your@email.com">your@email.com</a>
+      <a href="https://wa.me/212XXXXXXXXX">WhatsApp</a>
+      <p>In-person + online</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Fluenti · American English · Marrakech</p>
+    <div class="f-cert-row">
+      <span class="f-cert">CELTA</span><span class="f-cert">DELTA</span><span class="f-cert">TEFL</span><span class="f-cert">TESOL</span><span class="f-cert">TOEFL</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobile-menu');
+function closeMenu(){
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded','false');
+  mobileMenu.classList.remove('open');
+  document.body.style.overflow='';
+}
+hamburger.addEventListener('click',function(){
+  const isOpen=mobileMenu.classList.contains('open');
+  if(isOpen){closeMenu();}
+  else{
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded','true');
+    mobileMenu.classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+});
+const stickyBar=document.getElementById('sticky-bar');
+const heroEl=document.querySelector('.hero');
+stickyBar.style.cssText='display:flex;transition:transform .3s ease;transform:translateY(100%)';
+function updateStickyBar(){
+  if(!heroEl)return;
+  stickyBar.style.transform=heroEl.getBoundingClientRect().bottom<0?'translateY(0)':'translateY(100%)';
+}
+window.addEventListener('scroll',updateStickyBar,{passive:true});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const id=this.getAttribute('href').slice(1);
+    if(!id)return;
+    const el=document.getElementById(id);
+    if(!el)return;
+    e.preventDefault();
+    closeMenu();
+    const offset=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'))||60;
+    window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-offset-8,behavior:'smooth'});
+  });
+});
+window.addEventListener('resize',function(){if(window.innerWidth>768)closeMenu();},{passive:true});
+</script>
+</body>
+</html>
